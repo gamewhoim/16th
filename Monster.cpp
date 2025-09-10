@@ -74,7 +74,7 @@ bool TurnBattle(int& hp, int atk, int lv, const std::string& playerName) {
         }
 
         std::cout << " 상태 | 플레이어 HP=" << hp
-            << " | " << mon->getName() << " HP=" << mon->getHP() << "\n\n";
+            << " | " << mon->getName() << " HP=" << mon->getHP() << "\n\n\n";
 
         playerTurn = !playerTurn;
     }
@@ -125,7 +125,7 @@ bool BossBattle(int& hp, int atk, int lv, const std::string& playerName) {
                 << "의 공격! 플레이어가 " << dmg << " 피해\n\n";
         }
 
-        std::cout << " 상태 | 플레이어 HP = " << hp << " / " << boss->getName() << " HP = " << boss->getHP() << "\n\n";
+        std::cout << " 상태 | 플레이어 HP = " << hp << " / " << boss->getName() << " HP = " << boss->getHP() << "\n\n\n";
            
 
         playerTurn = !playerTurn;
